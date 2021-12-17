@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<!-- Bootstrap CSS -->
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+			crossorigin="anonymous"
+		/>
+
+		<title>Hello, world!</title>
+
+		<link
+			href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
+			rel="stylesheet"
+		/>
+
+		<link rel="stylesheet" href="styles.css" />
+	</head>
+	<body>
+		<!------------------- TODO: Navbar ------------------->
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+			<div class="container-fluid">
+				<!-- ------ offcanvas trigger------ -->
+				<button
+					class="navbar-toggler me-2"
+					type="button"
+					data-bs-toggle="offcanvas"
+					data-bs-target="#offcanvasExample"
+					aria-controls="offcanvasExample"
+				>
+					<span
+						class="navbar-toggler-icon"
+						data-bs-target="#offcanvasExample"
+					></span>
+				</button>
+				<!-- ------ offcanvas trigger------ -->
+
+				<a class="navbar-brand fw-bold me-auto" href="#">Genesis Motors</a>
+
+				<button
+					class="navbar-toggler"
+					type="button"
+					data-bs-toggle="collapse"
+					data-bs-target="#navbarSupportedContent"
+					aria-controls="navbarSupportedContent"
+					aria-expanded="false"
+					aria-label="Toggle navigation"
+				>
+					<span class="navbar-toggler-icon"></span>
+				</button>
+
+				<div
+					class="collapse navbar-collapse justify-content-end my-4 my-lg-0"
+					id="navbarSupportedContent"
+				>
+					<form class="d-flex">
+						<input
+							class="form-control me-2"
+							type="search"
+							placeholder="Search"
+							aria-label="Search"
+						/>
+						<button
+							class="btn btn-outline-secondary"
+							type="button"
+							id="button-addon2"
+							><i class="bx bx-search"></i
+						></button>
+					</form>
+
+					<ul class="navbar-nav mb-2 mb-lg-0">
+						<li class="nav-item dropdown">
+							<a
+								class="nav-link dropdown-toggle"
+								href="#"
+								id="navbarDropdown"
+								role="button"
+								data-bs-toggle="dropdown"
+								aria-expanded="false"
+							>
+								<i class="bx bxs-user"></i>
+							</a>
+							<ul
+								class="dropdown-menu dropdown-menu-end"
+								aria-labelledby="navbarDropdown"
+							>
+								<li><a class="dropdown-item" href="#">Action</a></li>
+								<li><a class="dropdown-item" href="#">Another action</a></li>
+								<li><hr class="dropdown-divider" /></li>
+								<li
+									><a class="dropdown-item" href="#">Something else here</a></li
+								>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<!------------------- TODO: End Navbar ------------------->
+
+		<!------------------- TODO: offcanvas ------------------->
+
+		<div
+			class="offcanvas offcanvas-start bg-dark text-white sidebar-nav"
+			tabindex="-1"
+			id="offcanvasExample"
+			aria-labelledby="offcanvasExampleLabel"
+		>
+			<div class="offcanvas-body p-0">
+				<div class="navbar-dark">
+					<ul class="navbar-nav">
+						<li>
+							<div class="text-muted small fw-bold text-uppercase px-3"
+								>CORE</div
+							>
+						</li>
+						<li>
+							<a href="#" class="nav-link px-3 active">
+								<span class="me-2">
+									<i class="bx bxs-dashboard"></i>
+									<span>Dashboard</span>
+								</span>
+							</a>
+						</li>
+						<li class="my-4">
+							<hr class="dropdown-divider" />
+						</li>
+						<li>
+							<div class="text-muted small fw-bold text-uppercase px-3"
+								>Administración de Genesis Motors</div
+							>
+						</li>
+
+						<li>
+							<a
+								class="nav-link px-3 sidebar-link"
+								data-bs-toggle="collapse"
+								href="#collapseExample"
+								role="button"
+								aria-expanded="false"
+								aria-controls="collapseExample"
+							>
+								<i class="bx bx-group"></i>
+								<span>Clientes</span>
+
+								<i class="bx bx-chevron-down right-icon ms-auto"></i>
+							</a>
+							<div class="collapse" id="collapseExample">
+								<div>
+									<ul class="navbar-nav ps-3">
+										<li>
+											<a href="#" class="nav-link">
+												<i class="bx bxs-contact"></i>
+												<span>Agendar clientes</span>
+											</a>
+										</li>
+										<li>
+											<a href="#" class="nav-link">
+												<i class="bx bx-user-plus"></i>
+												<span>agregar clientes</span>
+											</a>
+										</li>
+										<li>
+											<a href="#" class="nav-link">
+												<i class="bx bx-receipt"></i>
+												<span>Pagar cuota</span>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</li>
+
+						<li>
+							<a
+								class="nav-link px-3 sidebar-link"
+								data-bs-toggle="collapse"
+								href="#collapseExample1"
+								role="button"
+								aria-expanded="false"
+								aria-controls="collapseExample"
+							>
+								<i class="bx bx-receipt"></i>
+								<span>Facturas</span>
+
+								<i class="bx bx-chevron-down right-icon ms-auto"></i>
+							</a>
+							<div class="collapse" id="collapseExample1">
+								<div>
+									<ul class="navbar-nav ps-3">
+										<li>
+											<a href="#" class="nav-link">
+												<i class="bx bxs-contact"></i>
+												<span>Agendar clientes</span>
+											</a>
+										</li>
+										<li>
+											<a href="#" class="nav-link">
+												<i class="bx bx-user-plus"></i>
+												<span>agregar clientes</span>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</li>
+
+						<li>
+							<a
+								class="nav-link px-3 sidebar-link"
+								data-bs-toggle="collapse"
+								href="#collapseExample2"
+								role="button"
+								aria-expanded="false"
+								aria-controls="collapseExample"
+							>
+								<i class="bx bx-receipt"></i>
+								<span>Item</span>
+
+								<i class="bx bx-chevron-down right-icon ms-auto"></i>
+							</a>
+							<div class="collapse" id="collapseExample2">
+								<div>
+									<ul class="navbar-nav ps-3">
+										<li>
+											<a href="#" class="nav-link">
+												<i class="bx bxs-contact"></i>
+												<span>Item</span>
+											</a>
+										</li>
+										<li>
+											<a href="#" class="nav-link">
+												<i class="bx bx-user-plus"></i>
+												<span>Item</span>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!------------------- TODO: End offcanvas ------------------->
+
+		<!------------------- TODO: Main ------------------->
+
+		<main class="mt-5 pt-3">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-12 fw-bold fs-3"> Dashboard </div>
+				</div>
+
+				<div class="row">
+					<div class="col-md-3">
+						<div
+							class="card text-white bg-primary mb-3"
+							style="max-width: 18rem"
+						>
+							<div class="card-header">Agendar clientes</div>
+							<div class="card-body">
+								<h5 class="card-title">Agregas clientes nuevo</h5>
+								<p class="card-text"
+									>Some quick example text to build on the card title and make
+									up the bulk of the card's content.</p
+								>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-3">
+						<div
+							class="card text-white bg-success mb-3"
+							style="max-width: 18rem"
+						>
+							<div class="card-header">Header</div>
+							<div class="card-body">
+								<h5 class="card-title">Success card title</h5>
+								<p class="card-text"
+									>Some quick example text to build on the card title and make
+									up the bulk of the card's content.</p
+								>
+								<div class="card-footer d-flex">
+									<a href="#" class="stretched-link">View Details</a>
+									<span class="ms-auto">
+										<i class="bx bx-chevron-right"></i>
+									</span>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-3">
+						<div
+							class="card text-white bg-danger mb-3"
+							style="max-width: 18rem"
+						>
+							<div class="card-header">Header</div>
+							<div class="card-body">
+								<h5 class="card-title">Danger card title</h5>
+								<p class="card-text"
+									>Some quick example text to build on the card title and make
+									up the bulk of the card's content.</p
+								>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-3">
+						<div
+							class="card text-white bg-danger mb-3"
+							style="max-width: 18rem"
+						>
+							<div class="card-header">Header</div>
+							<div class="card-body">
+								<h5 class="card-title">Danger card title</h5>
+								<p class="card-text"
+									>Some quick example text to build on the card title and make
+									up the bulk of the card's content.</p
+								>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-md-12">
+						<div class="card">
+							<div class="card-header"> Data tables </div>
+						</div>
+						<div class="card-body">
+							<div class="table-responsive">
+								<table
+									id="example"
+									class="table table-striped data-table"
+									style="width: 100%"
+								>
+									<thead>
+										<tr>
+											<th>Name</th>
+											<th>Position</th>
+											<th>Office</th>
+											<th>Age</th>
+											<th>Start date</th>
+											<th>Salary</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>Tiger Nixon</td>
+											<td>System Architect</td>
+											<td>Edinburgh</td>
+											<td>61</td>
+											<td>2011/04/25</td>
+											<td>$320,800</td>
+										</tr>
+										<tr>
+											<td>Garrett Winters</td>
+											<td>Accountant</td>
+											<td>Tokyo</td>
+											<td>63</td>
+											<td>2011/07/25</td>
+											<td>$170,750</td>
+										</tr>
+										<tr>
+											<td>Ashton Cox</td>
+											<td>Junior Technical Author</td>
+											<td>San Francisco</td>
+											<td>66</td>
+											<td>2009/01/12</td>
+											<td>$86,000</td>
+										</tr>
+										<tr>
+											<td>Cedric Kelly</td>
+											<td>Senior Javascript Developer</td>
+											<td>Edinburgh</td>
+											<td>22</td>
+											<td>2012/03/29</td>
+											<td>$433,060</td>
+										</tr>
+										<tr>
+											<td>Airi Satou</td>
+											<td>Accountant</td>
+											<td>Tokyo</td>
+											<td>33</td>
+											<td>2008/11/28</td>
+											<td>$162,700</td>
+										</tr>
+									</tbody>
+									<tfoot>
+										<tr>
+											<th>Name</th>
+											<th>Position</th>
+											<th>Office</th>
+											<th>Age</th>
+											<th>Start date</th>
+											<th>Salary</th>
+										</tr>
+									</tfoot>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+
+		<!------------------- TODO: End Main ------------------->
+
+		<!-- Option 1: Bootstrap Bundle with Popper -->
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+			crossorigin="anonymous"
+		></script>
+	</body>
+</html>
